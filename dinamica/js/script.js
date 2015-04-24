@@ -17,17 +17,17 @@ $(document).ready(function() {
                     "<tr class='success'>" +
                     "<td>" + assunto + "</td>" +
                     "<td>" +
-                    " <div class='btn-group'><a value=" + "'" + assunto + "'" + " class='btn btn-success disabled'><i class='icon-thumbs-up icon-white'></i> Mover</a>" +
+                    " <div class='btn-group'><a value=" + "'" + assunto + "'" + " class='btn btn-success disabled mover'><i class='icon-thumbs-up icon-white'></i> Já Aprendi</a>" +
                     " <a href='javascript:void(0);' class='btn btn-danger remove'><i class='icon-trash icon-white'></i> Remover</a></div>" +
                     "</td>" +
                     "</td>" +
                     "</tr>");
             } else {
                 $(".table-bordered").append(
-                    "<tr class='warning'>" +
+                    "<tr class='error'>" +
                     "<td>" + assunto + "</td>" +
                     "<td>" +
-                    " <div class='btn-group'><a href='javascript:void(0);' value=" + "'" + assunto + "'" + " class='btn btn-success mover'><i class='icon-thumbs-up icon-white'></i> Mover</a>" +
+                    " <div class='btn-group'><a href='javascript:void(0);' value=" + "'" + assunto + "'" + " class='btn btn-success mover'><i class='icon-thumbs-up icon-white'></i> Já Aprendi</a>" +
                     " <a href='javascript:void(0);' class='btn btn-danger remove'><i class='icon-trash icon-white'></i> Remover</a></div>" +
                     "</td>" +
                     "</tr>");
@@ -45,7 +45,7 @@ $(document).ready(function() {
         Mover Elemento
     */
     $(document).on('click', 'a.mover', function() {
-        $("tr").removeClass("warning").addClass("success");
+    	$(this).parent().parent().parent().removeClass("error").addClass("success");
         $(this).addClass('disabled');
     });
 });
