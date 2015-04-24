@@ -9,8 +9,8 @@ $(document).ready(function() {
             $(".alert").hide();
 
             var assunto = $("#assuntoAprender").val();
-            var radio = $('input[name=assuntos]');
-            var checkedValue = radio.filter(':checked').val();
+            var checkbox = $('input[name=assuntos]');
+            var checkedValue = checkbox.filter(':checked').val();
 
             if (checkedValue == "sim") {
                 $(".table-bordered").append(
