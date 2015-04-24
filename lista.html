@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="autor" content="Wendley Paulo de França">
+      <title>Convence SI1 - Novos Assunto</title>
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <script type="text/javascript" src="js/jquery-1.11.2.js"></script>
+   </head>
+   <body>
+      <div id="wrap">
+         <div class="container">
+            <div class="row">
+               <div class="span2"></div>
+               <div class="span8">
+                  <img alt="Logo" src="img/logo.jpg" class="logo">
+               </div>
+               <div class="span2"></div>
+            </div>
+            <br>
+            <div class="row">
+               <div class="span2"></div>
+               <div class="span8">
+                  <h3 id="titulo">Convence SI !</h3>
+                  <br>
+                  <form class="form-horizontal">
+                     <fieldset>
+                        <legend>Assuntos</legend>
+                        <input type="text" value="" id="assuntoAprender" placeholder="Ex: Arquitetura de software" required autofocus>
+                        <br>
+                        <br>
+                        <label class="checkbox">
+                        	<input type="checkbox" name="assuntos" value="sim">Já Aprendi
+                        </label>
+                        <input type="submit" class="btn" id="add" value="+ Add">
+                     </fieldset>
+                    </form>
+                     <br>
+                   <div class="aviso">
+                   	<div class="alert alert-error" style="display: none">
+    		      <a class="close" onclick="$('.alert').hide()">×</a>
+    		      <strong>Atenção !</strong> Insira um valor valido.
+		</div>
+                   </div>
+                  <table class="table table-bordered">
+                     <tr>
+                        <th>Assuntos</th>
+                        <th>Opções</th>
+                     </tr>
+                  </table>
+                  <div class="well">
+                  	<p class="text-error">
+                  		<span class="label label-important">Importante</span> Adicione assuntos novos que voce gostaria de ser
+                           abordado na disciplina, ou adcione assuntos ja visto por voce.
+                    </p>
+                  </div>
+                  <br>
+                  <ol>
+                  </ol>
+                  <a href="index.html" class="btn btn-large btn-primary disabled"><i
+                     class="icon-home icon-white"></i> Página Inicial</a>
+               </div>
+               <div class="span2"></div>
+            </div>
+         </div>
+      </div>
+       <div id="espaco"></div>
+      <div id="footer">
+         <div class="container">
+            <p class="muted credit">&copy; Wendley Paulo</p>
+         </div>
+      </div>
+      <script src="js/script.js"></script>
+      <script src="http://code.jquery.com/jquery-latest.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+   </body>
+</html>

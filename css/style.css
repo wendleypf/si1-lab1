@@ -1,0 +1,93 @@
+@CHARSET "UTF-8";
+
+html, body {
+	height: 100%;
+}
+
+.logo {
+	width: 600px;
+	height: 200px;
+}
+
+.txt-into, #conteudo, #paragrafo {
+	text-indent: 25px;
+	text-align: justify;
+}
+
+#titulo {
+	text-align: center;
+}
+
+#obrigado {
+	-webkit-animation: cssAnimation 0.5s 20 linear;
+	-moz-animation: cssAnimation 0.5s 20 linear;
+	-o-animation: cssAnimation 0.5s 20 linear;
+	text-align: center;
+	font-size: 50px;
+	color: #90C140;
+}
+
+@
+-webkit-keyframes cssAnimation {from { -webkit-transform:rotate(4deg)scale(1)skew(1deg)translate(10px);
+	
+}
+
+to {
+	-webkit-transform: rotate(0deg) scale(0.766) skew(1deg) translate(0px);
+}
+
+}
+@
+-moz-keyframes cssAnimation {from { -moz-transform:rotate(4deg)scale(1)skew(1deg)translate(10px);
+	
+}
+
+to {
+	-moz-transform: rotate(0deg) scale(0.766) skew(1deg) translate(0px);
+}
+
+}
+@
+-o-keyframes cssAnimation {from { -o-transform:rotate(4deg)scale(1)skew(1deg)translate(10px);
+	
+}
+
+to {
+	-o-transform: rotate(0deg) scale(0.766) skew(1deg) translate(0px);
+}
+
+}
+#espaco {
+	padding: 50px;
+}
+
+#wrap {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	/* Negative indent footer by it's height */
+	margin: 0 auto -60px;
+}
+
+#footer {
+	height: 60px;
+	background-color: #f5f5f5;
+}
+
+@media ( max-width : 767px) {
+	#footer {
+		margin-left: -20px;
+		margin-right: -20px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+.container {
+	width: auto;
+	max-width: 680px;
+}
+
+.container .credit {
+	margin: 20px 0;
+}
